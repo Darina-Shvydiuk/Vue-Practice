@@ -2,18 +2,21 @@
   <MyComponent/>
   <HwCounter/>
   <UserCard/>
+  <HwSearchProject/>
 </template>
 <script>
 import MyComponent from './components/lesson0/MyComponent.vue'
 import HwCounter from './components/lesson0/HwCounter.vue'
 import UserCard from './components/lesson1/UserCard.vue'
+import HwSearchProject from './components/lesson1/HwSearchProject.vue'
 
 export default {
   name: 'App',
   components: {
     MyComponent,
     HwCounter,
-    UserCard
+    UserCard,
+    HwSearchProject
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
-  <div class="user-card">
+  <div class="card">
     <h1>Junior Frontend Developer</h1>
-    <p class="user-name"> {{getFullName}}</p>
+    <p class="name"> {{getFullName}}</p>
     <ul class="list">
       {{listTechSkills}}
       <li class="item">
@@ -84,10 +84,10 @@ export default {
 }
 </script>
 <style >
-.user-card{
+.card{
   display: block;
 }
-.user-name{
+.name{
 text-align: center;
 font-size: 20px;
 }
