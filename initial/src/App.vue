@@ -1,17 +1,19 @@
 <template>
   <MyComponent/>
   <HwCounter/>
+  <UserCard/>
 </template>
-
 <script>
 import MyComponent from './components/lesson0/MyComponent.vue'
 import HwCounter from './components/lesson0/HwCounter.vue'
+import UserCard from './components/lesson1/UserCard.vue'
 
 export default {
   name: 'App',
   components: {
     MyComponent,
-    HwCounter
+    HwCounter,
+    UserCard
   }
 }
 </script>
