@@ -20,13 +20,13 @@
       {{`${index + 1} ${getProjectsList(project)}`}}
       </li>
     </ul>
-    <button type="button" @click="currentPage--">
+    <button type="button" @click="currentPage--" class="btn">
       Previous
     </button>
-    <button v-for="(page) in pages" :key="page" type="button" @click="currentPage = page">
+    <button v-for="(page) in pages" :key="page" type="button" @click="currentPage = page" class="btn">
     {{page}}
     </button>
-    <button type="button" @click="currentPage++">
+    <button type="button" @click="currentPage++" class="btn">
       Next
     </button>
     <p>
@@ -59,8 +59,8 @@ export default {
           language: 'HTML5'
         }
       ],
-      pages: '3',
-      currentPage: '1'
+      pages: 3,
+      currentPage: 1
     }
   },
   computed: {
@@ -71,6 +71,14 @@ export default {
   methods: {
     getProjectsList (project) {
       return `${project.title}  ${project.language}`
+    },
+    loadProjects (page) {
+      console.log(`Loading projects: page ${page}`)
+    }
+  },
+  watch: {
+    currentPage (page) {
+      this.loadProjects(page)
     }
   }
 }
@@ -94,5 +102,10 @@ font-size: 20px;
 }
 .item{
   margin-bottom: 5px;
+}
+.btn{
+  border-radius: 8px;
+  padding: 5px;
+margin-right: 3px;
 }
 </style>
