@@ -4,6 +4,7 @@
   <UserCard/>
   <HwSearchProject/>
   <PhotoRedactor/>
+  <ProductList/>
 </template>
 <script>
 import MyComponent from './components/lesson0/MyComponent.vue'
@@ -11,6 +12,7 @@ import HwCounter from './components/lesson0/HwCounter.vue'
 import UserCard from './components/lesson1/UserCard.vue'
 import HwSearchProject from './components/lesson1/HwSearchProject.vue'
 import PhotoRedactor from './components/lesson2/PhotoRedactor.vue'
+import ProductList from './components/lesson3/ProductList.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     HwCounter,
     UserCard,
     HwSearchProject,
-    PhotoRedactor
+    PhotoRedactor,
+    ProductList
   }
 }
 </script>
