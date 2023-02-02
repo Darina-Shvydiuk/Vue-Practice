@@ -5,6 +5,7 @@
   <HwSearchProject/>
   <PhotoRedactor/>
   <ProductList/>
+  <UserForm/>
 </template>
 <script>
 import MyComponent from './components/lesson0/MyComponent.vue'
@@ -13,6 +14,7 @@ import UserCard from './components/lesson1/UserCard.vue'
 import HwSearchProject from './components/lesson1/HwSearchProject.vue'
 import PhotoRedactor from './components/lesson2/PhotoRedactor.vue'
 import ProductList from './components/lesson3/ProductList.vue'
+import UserForm from './components/lesson4/UserForm.vue'
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     UserCard,
     HwSearchProject,
     PhotoRedactor,
-    ProductList
+    ProductList,
+    UserForm
   }
 }
 </script>

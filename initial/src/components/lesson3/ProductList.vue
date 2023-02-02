@@ -54,7 +54,7 @@ export default {
       console.log(index)
     },
     searchProducts (searchText) {
-      console.log('Load goods' + '' + searchText)
+      console.log('Load goods ' + '' + searchText)
     }
   }
 }

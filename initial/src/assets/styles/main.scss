@@ -23,11 +23,22 @@ h1, h2, h3, h4 {
     margin-bottom: 14px;
   }
 }
+.list-default {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  li {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+}
+
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-top: 40px;
 }
 
 button {
